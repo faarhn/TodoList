@@ -6,27 +6,27 @@
     <title>Document</title>
     <script src="https://cdn.tailwindcss.com"></script>
 </head>
-<body class="bg-gray-300 bg-gradient-to-r from-gray-400 via-white to-gray-400">
+<body class="bg-gray-300 bg-gradient-to-r from-gray-400 via-white to-gray-400 min-h-screen p-4">
 
 
     <div class="w-full flex justify-center my-4">
-    <div class="w-[300px] rounded-full  text-4xl text-center font-bold text-black shadow-black shadow-md bg-gradient-to-r from-gray-400 via-white to-gray-400"> To-Do List </div>
+    <div class="w-full max-w-[400px] px-4 py-2 rounded-full  text-2xl sm:text-4xl text-center font-bold text-black shadow-black shadow-md bg-gradient-to-r from-gray-400 via-white to-gray-400"> To-Do List </div>
 </div>
 
-    <div class="grid h-[90vh] grid-cols-4 justify-center items-center ">
+    <div class="grid grid-cols-1 midgrid-cols-4 gap-4">
 
-        <div id="add_todo" class="shadow-[0_4px_20px_black] ml-2 h-[60%] col-span-1 grid grid-rows-4 grid-cols-3 border-2 border-black rounded-xl justify-center items-center">
+        <div id="add_todo" class="shadow-[0_4px_20px_black] ml-2 h-auto md:h-[60vh] col-span-1 grid grid-rows-4 grid-cols-3 border-2 border-black rounded-xl justify-center items-center">
 
-            <input id="in" type="text" class="h-full w-full col-span-3 border-2 border-black rounded-xl row-start-2" placeholder="Enter the task...">
-            <button id="add" class="mx-auto w-[70%] border-2 border-black rounded-2xl row-start-3 col-start-2  bg-green-500">Add</button>
+            <input id="in" type="text" class="h-12 w-full px-2 col-span-3 border-2 border-black rounded-xl row-start-2" placeholder="Enter the task...">
+            <button id="add" class="mt-2 w-[70%] border-2 border-black rounded-2xl row-start-3 col-start-2  bg-green-500">Add</button>
 
 
         </div>
 
 
-        <div id="listdiv" class="mr-2 col-start-3 col-span-2 shadow-md shadow-black flex justify-center items-center max-h-[500px]  border-2 border-black rounded-xl overflow-y-auto">
+        <div id="listdiv" class="mr-2 col-span-1 md:col-span-3 shadow-md shadow-black flex justify-center items-center max-h-[500px]  border-2 border-black rounded-xl overflow-y-auto">
             
-            <ul id="list" class="h-full m-2 w-full overflow-y-auto">
+            <ul id="list" class="m-2 w-full space-y-2">
             
                 <!-- <li class="mt-2 flex justify-between border-2 border-black rounded-xl gap-2">Tasksssdasdasdasds
 
